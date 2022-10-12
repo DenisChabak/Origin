@@ -5,8 +5,8 @@ int main(int argc, char** argv)
     setlocale(LC_ALL, "Rus");
 
     enum Month 
-    {Январь = 1, Февраль = 2, Март = 3, Апрель = 4, Май = 5, Июнь = 6, Июль = 7, 
-     Август = 8, Сентябрь = 9, Октябрь = 10, Ноябрь = 11, Декабрь = 12,};
+    {January = 1, February = 2, March = 3, April = 4, May = 5, June = 6, July = 7, 
+     August = 8, September = 9, October = 10, November = 11, December = 12,};
     
         int select;
         do
@@ -14,45 +14,45 @@ int main(int argc, char** argv)
             std::cout << " Введите номер месяца: ";
             std::cin >> select;
         
-        switch (static_cast<int> (select))
+        switch (select)
         {
         case 0:
             std::cout << " До свидания" << std::endl;
             break;
-        case 1:
+        case static_cast <int> (January):
             std::cout << " Январь" << std::endl;
             break;
-        case 2:
+        case static_cast <int> (February):
             std::cout << " Февраль" << std::endl;
             break;
-        case 3:
+        case static_cast <int> (March):
             std::cout << " Март" << std::endl;
             break;
-        case 4:
+        case static_cast <int> (April):
             std::cout << " Апрель" << std::endl;
             break;
-        case 5:
+        case static_cast <int> (May):
             std::cout << " Май" << std::endl;
             break;
-        case 6:
+        case static_cast <int> (June):
             std::cout << " Июнь" << std::endl;
             break;
-        case 7:
+        case static_cast <int> (July):
             std::cout << " Июль" << std::endl;
             break;
-        case 8:
+        case static_cast <int> (August):
             std::cout << " Август" << std::endl;
             break;
-        case 9:
+        case static_cast <int> (September):
             std::cout << " Сентябрь" << std::endl;
             break;
-        case 10:
+        case static_cast <int> (October):
             std::cout << " Октябрь" << std::endl;
             break;
-        case 11:
+        case static_cast <int> (November):
             std::cout << " Ноябрь" << std::endl;
             break;
-        case 12:
+        case static_cast <int> (December):
             std::cout << " Декабрь" << std::endl;
             break;
         default:

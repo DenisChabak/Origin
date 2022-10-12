@@ -8,7 +8,7 @@ struct Person
     float m_newbalance;
 };
 
-void changeBalance(Person p)
+void changeBalance(Person &p, float new_balance)
 {   
     std::cout << "Ваш счёт: " << p.m_firstname << ", " << p.m_number << ", " << p.m_newbalance;
 }
@@ -31,7 +31,7 @@ int main(int argc, char** argv)
     std::cout << "\n" << "Введите новый баланс: ";
     std::cin >> p.m_newbalance;
     
-    changeBalance(p);
+    changeBalance(p, p.m_newbalance);
     
     return 0;
     
