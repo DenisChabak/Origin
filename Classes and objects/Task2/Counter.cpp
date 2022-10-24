@@ -12,12 +12,11 @@ private:
 
 public:
 
-	int get_count(int count)
+	Counter(int startcount = 0) 
 	{
-		this->count = count;
-		return count;
+		count = startcount;
 	}
-		
+	
 	int adder()
 	{
 		count++;
@@ -56,11 +55,11 @@ int main()
 	{
 		std::cout << "Введите начальное значение счётчика: ";
 		std::cin >> number;
-		num.get_count(number);
+		num.Counter::Counter(number);
 	}
 	else
 	{
-		num.get_count(0);
+		num.Counter::Counter(0);
 	}
 
 	while (true)

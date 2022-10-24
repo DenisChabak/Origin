@@ -22,37 +22,37 @@ public:
 
 		double add(float Num1, float Num2)
 		{
-			std::cout << "Num1 + Num2 = " << Num1 + Num2 << std::endl;
+			std::cout << "Num1 + Num2 = " << SetNum1() + SetNum2() << std::endl;
 			return Num1 + Num2;
 		}
 
 		double multiply(float Num1, float Num2)
 		{
-			std::cout << "Num1 * Num2 = " << Num1 * Num2 << std::endl;
+			std::cout << "Num1 * Num2 = " << SetNum1() * SetNum2() << std::endl;
 			return Num1 * Num2;
 		}
 
 		double subtract_1_2(float Num1, float Num2)
 		{
-			std::cout << "Num1 - Num2 = " << Num1 - Num2 << std::endl;
+			std::cout << "Num1 - Num2 = " << SetNum1() - SetNum2() << std::endl;
 			return Num1 - Num2;
 		}
 
 		double subtract_2_1(float Num1, float Num2)
 		{
-			std::cout << "Num2 - Num1 = " << Num2 - Num1 << std::endl;
+			std::cout << "Num2 - Num1 = " << SetNum2() - SetNum1() << std::endl;
 			return Num2 - Num1;
 		}
 
 		double divide_1_2(float Num1, float Num2)
 		{
-			std::cout << "Num1 / Num2 = " << Num1 / Num2 << std::endl;
+			std::cout << "Num1 / Num2 = " << SetNum1() / SetNum2() << std::endl;
 			return Num1 / Num2;
 		}
 
 		double divide_2_1(float Num1, float Num2)
 		{
-			std::cout << "Num2 / Num1 = " << Num2 / Num1 << std::endl;
+			std::cout << "Num2 / Num1 = " << SetNum2() / SetNum1() << std::endl;
 			return Num2 / Num1;
 		}
 
