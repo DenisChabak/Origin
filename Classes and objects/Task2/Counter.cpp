@@ -8,21 +8,16 @@
 class Counter
 {
 private:
-	int count = 1;
+	int count;
 
 public:
 
-	int get_count()
+	int get_count(int count)
 	{
-		count = 1;
+		this->count = count;
 		return count;
 	}
-
-	int set_count(int number)
-	{
-		this->count = number;
-		return count;
-	}
+		
 	int adder()
 	{
 		count++;
@@ -61,11 +56,11 @@ int main()
 	{
 		std::cout << "Введите начальное значение счётчика: ";
 		std::cin >> number;
-		num.set_count(number);
+		num.get_count(number);
 	}
 	else
 	{
-		num.get_count();
+		num.get_count(0);
 	}
 
 	while (true)

@@ -3,9 +3,22 @@
 
 class Calculator
 {
-public:
+private:
+
 	float Num1;
 	float Num2;
+
+public:	
+
+	float SetNum1()
+	{
+		return Num1;
+	}
+
+	float SetNum2()
+	{
+		return Num2;
+	}
 
 		double add(float Num1, float Num2)
 		{
